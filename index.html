@@ -22,7 +22,9 @@
       display: grid;
       place-items: center;
       font-family: system-ui, -apple-system, "Segoe UI", Roboto,
-        "Noto Sans Canadian Aboriginal", "Euphemia UCAS", "Gadugi", sans-serif;
+        "Noto Sans Canadian Aboriginal", "Euphemia UCAS", "Gadugi",
+        "Noto Sans Myanmar", "Myanmar Text", "Noto Serif Tibetan",
+        "Microsoft Himalaya", "Noto Sans Yi", sans-serif;
       background: radial-gradient(circle at top, #1e293b, var(--bg));
       color: var(--text);
     }
@@ -112,6 +114,9 @@
   <nav class="lang-switch" aria-label="Language">
     <button type="button" data-lang="en" aria-pressed="true">English</button>
     <button type="button" data-lang="iu" aria-pressed="false" lang="iu">ᐃᓄᒃᑎᑐᑦ</button>
+    <button type="button" data-lang="my" aria-pressed="false" lang="my">မြန်မာ</button>
+    <button type="button" data-lang="bo" aria-pressed="false" lang="bo">བོད་སྐད</button>
+    <button type="button" data-lang="ii" aria-pressed="false" lang="ii">ꆈꌠꉙ</button>
   </nav>
 
   <main class="card">
@@ -131,6 +136,24 @@
         badge: "ᖃᓄᐃᓕᖓᓂᖓ",
         headline: "ᖃᐅᔨᓴᕐᓂᖅ",
         sub: "ᑭᓱᑕᒫᑦ ᐱᓕᕆᐊᖃᖅᑐᑦ ᓂᕆᐅᒋᔭᐅᔪᑎᑐᑦ.",
+      },
+      my: {
+        badge: "အခြေအနေ",
+        headline: "စမ်းသပ်ချက်",
+        sub: "အားလုံး မျှော်လင့်ထားသည့်အတိုင်း အလုပ်လုပ်နေပါသည်။",
+      },
+      bo: {
+        badge: "གནས་སྟངས།",
+        headline: "བརྟག་དཔྱད།",
+        sub: "ཐམས་ཅད་རེ་བ་ལྟར་ལས་ཀ་བྱེད་བཞིན་ཡོད།",
+      },
+      // Nuosu (ii): full translation pending review by a fluent speaker,
+      // so content falls back to English while the button shows the
+      // language's native name (ꆈꌠꉙ, Nuosuhxop).
+      ii: {
+        badge: "Status",
+        headline: "test",
+        sub: "Everything is working as expected.",
       },
     };
 
